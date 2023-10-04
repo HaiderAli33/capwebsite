@@ -1,0 +1,265 @@
+body{
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: black;
+}
+h1{
+    font-family: 'Changa',sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.nav-bar{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 5rem;
+    
+}
+nav{
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    height: 2rem;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem ;
+    list-style: none;
+    width: 25rem;
+    margin-top: 0;
+}
+li{
+    font-size: 1rem;
+    font-family: 'Epilogue', sans-serif;
+    color: white
+}
+section{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+}
+
+.container::before{
+    content: "";
+    background-image: url(./images/luke-pamer-hiZ7wtdX-nI-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 90vw;
+    height: 80vh;
+    z-index: -1;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 90vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+.title{
+    margin-top: -5rem;
+}
+.head{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+}
+.title > h4{
+    font-family: 'Changa', sans-serif;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 100;
+    margin: 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn > button{
+    width:5.3rem;
+    height: 2.3rem;
+    padding: 0.3rem;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-width: thin;
+}
+
+.login-search{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.3rem;
+}
+input{
+    width: 8rem;
+    height: 1.4rem;
+}
+.login{
+    display: flex;
+    gap: 0.4rem;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.nav{
+    width: 20rem;
+    position: absolute;
+    right: 0;
+    background-color: black;
+    height: 80vh;
+}
+.nav > ul{
+    display: flex;
+    flex-direction: column;
+    width:max-content;
+}
+.nav > ul > li {
+    margin: 2rem 0;
+    text-align: center;
+    width: max-content;
+    
+}
+.nav > ul >li > a {
+    text-decoration: none;
+    color: white; 
+}
+.remove{
+    display: none;
+}
+.limited > h1{
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+.catalogue{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    
+}
+.catalogue-container{
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 10rem;
+    
+}
+.cap-container{
+    width: 15rem;
+    height: 20rem;
+    border-radius: 10px;
+    
+    
+}
+.cap-container> img{
+    height: 15rem;
+}
+.cap-container>h2{
+    font-family: Changa;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.cap-container > h4{
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0;
+    text-align: center;
+}
+.catalogue-sm{
+    width: 100vw;
+    height: 50vh;
+    display: none;
+}
+
+@media (max-width:385px){
+    .search{
+        display: none;
+
+    }
+    .login{
+        display: none;
+    }
+    .nav-bar{
+        padding: 1rem ;
+        margin: 0 0.5rem;
+    }
+    nav{
+        padding: 0;
+    }
+    .logo{
+        height: 1rem;
+        margin: 0;
+    }
+    .nav{
+        width: 15rem ;
+    }
+    .limited{
+        font-size: 2rem;
+    }
+    .catalogue{
+        display:none;
+    }   
+    .catalogue-sm{
+        display: initial;
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .sm-cat-container{
+        width: 90vw;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+
+    }
+    .sm-cat-container::before{
+        content: "";
+        background-image: url(./images/andre-styles-fwDlnTM_DJo-unsplash.jpg);
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 90vw;
+        height: 70vh;
+        background-size: cover;
+        background-position: center; 
+        z-index: -1;
+    }
+    .btn-shop{
+        margin-bottom: 5rem;
+        width: 5rem;
+        height: 2rem;
+        background-color: transparent;
+        color:white;
+        border-color: blue;
+        font-family: "Changa",sans-serif;
+    }
+}
